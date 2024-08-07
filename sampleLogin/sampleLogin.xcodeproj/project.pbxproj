@@ -18,18 +18,10 @@
 		3C8E32392C63B10A00B9F6C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E32382C63B10A00B9F6C6 /* LoginView.swift */; };
 		3C8E323B2C63B16400B9F6C6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E323A2C63B16400B9F6C6 /* WelcomeView.swift */; };
 		3C8E323D2C63B28400B9F6C6 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E323C2C63B28400B9F6C6 /* WelcomeViewModel.swift */; };
-		3C8E324A2C63CB6600B9F6C6 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8E32492C63CB6600B9F6C6 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3C8E32142C63A0D200B9F6C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C8E31FB2C63A0CF00B9F6C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C8E32022C63A0CF00B9F6C6;
-			remoteInfo = sampleLogin;
-		};
-		3C8E321E2C63A0D200B9F6C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C8E31FB2C63A0CF00B9F6C6 /* Project object */;
 			proxyType = 1;
@@ -45,7 +37,6 @@
 		3C8E320D2C63A0D200B9F6C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C8E32132C63A0D200B9F6C6 /* sampleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8E32172C63A0D200B9F6C6 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
-		3C8E321D2C63A0D200B9F6C6 /* sampleLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8E32302C63A0F800B9F6C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3C8E32322C63A13200B9F6C6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3C8E32342C63A14E00B9F6C6 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -64,14 +55,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3C8E32102C63A0D200B9F6C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C8E324A2C63CB6600B9F6C6 /* ViewInspector in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C8E321A2C63A0D200B9F6C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,7 +78,6 @@
 			children = (
 				3C8E32032C63A0CF00B9F6C6 /* sampleLogin.app */,
 				3C8E32132C63A0D200B9F6C6 /* sampleLoginTests.xctest */,
-				3C8E321D2C63A0D200B9F6C6 /* sampleLoginUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +195,8 @@
 			dependencies = (
 			);
 			name = sampleLogin;
+			packageProductDependencies = (
+			);
 			productName = sampleLogin;
 			productReference = 3C8E32032C63A0CF00B9F6C6 /* sampleLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -232,29 +216,10 @@
 			);
 			name = sampleLoginTests;
 			packageProductDependencies = (
-				3C8E32492C63CB6600B9F6C6 /* ViewInspector */,
 			);
 			productName = sampleLoginTests;
 			productReference = 3C8E32132C63A0D200B9F6C6 /* sampleLoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3C8E321C2C63A0D200B9F6C6 /* sampleLoginUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C8E322D2C63A0D200B9F6C6 /* Build configuration list for PBXNativeTarget "sampleLoginUITests" */;
-			buildPhases = (
-				3C8E32192C63A0D200B9F6C6 /* Sources */,
-				3C8E321A2C63A0D200B9F6C6 /* Frameworks */,
-				3C8E321B2C63A0D200B9F6C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3C8E321F2C63A0D200B9F6C6 /* PBXTargetDependency */,
-			);
-			name = sampleLoginUITests;
-			productName = sampleLoginUITests;
-			productReference = 3C8E321D2C63A0D200B9F6C6 /* sampleLoginUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -273,10 +238,6 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 3C8E32022C63A0CF00B9F6C6;
 					};
-					3C8E321C2C63A0D200B9F6C6 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 3C8E32022C63A0CF00B9F6C6;
-					};
 				};
 			};
 			buildConfigurationList = 3C8E31FE2C63A0CF00B9F6C6 /* Build configuration list for PBXProject "sampleLogin" */;
@@ -289,7 +250,6 @@
 			);
 			mainGroup = 3C8E31FA2C63A0CF00B9F6C6;
 			packageReferences = (
-				3C8E32482C63CB6600B9F6C6 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 3C8E32042C63A0CF00B9F6C6 /* Products */;
 			projectDirPath = "";
@@ -297,7 +257,6 @@
 			targets = (
 				3C8E32022C63A0CF00B9F6C6 /* sampleLogin */,
 				3C8E32122C63A0D200B9F6C6 /* sampleLoginTests */,
-				3C8E321C2C63A0D200B9F6C6 /* sampleLoginUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,13 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3C8E32112C63A0D200B9F6C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C8E321B2C63A0D200B9F6C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,13 +304,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C8E32192C63A0D200B9F6C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -366,11 +311,6 @@
 			isa = PBXTargetDependency;
 			target = 3C8E32022C63A0CF00B9F6C6 /* sampleLogin */;
 			targetProxy = 3C8E32142C63A0D200B9F6C6 /* PBXContainerItemProxy */;
-		};
-		3C8E321F2C63A0D200B9F6C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C8E32022C63A0CF00B9F6C6 /* sampleLogin */;
-			targetProxy = 3C8E321E2C63A0D200B9F6C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,40 +528,6 @@
 			};
 			name = Release;
 		};
-		3C8E322E2C63A0D200B9F6C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.sample.login.sampleLoginUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = sampleLogin;
-			};
-			name = Debug;
-		};
-		3C8E322F2C63A0D200B9F6C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bryan.sample.login.sampleLoginUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = sampleLogin;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,35 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C8E322D2C63A0D200B9F6C6 /* Build configuration list for PBXNativeTarget "sampleLoginUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C8E322E2C63A0D200B9F6C6 /* Debug */,
-				3C8E322F2C63A0D200B9F6C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3C8E32482C63CB6600B9F6C6 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nalexn/ViewInspector";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.11;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3C8E32492C63CB6600B9F6C6 /* ViewInspector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8E32482C63CB6600B9F6C6 /* XCRemoteSwiftPackageReference "ViewInspector" */;
-			productName = ViewInspector;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C8E31FB2C63A0CF00B9F6C6 /* Project object */;
 }
